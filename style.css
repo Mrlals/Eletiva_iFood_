@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 1em;
+    background-image: url('images/iFood_blc.png'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho correto para sua imagem */
+    background-size: cover; /* Isso faz com que a imagem cubra todo o fundo */
+    background-position: center; /* Isso centraliza a imagem no fundo */
+    /* Outras propriedades de estilo podem ser adicionadas conforme necessário */
+}
+
+/* menu de navegação */
+nav {
+    background-color: #f5f3f4; /* Cor cinza claro do menu do iFood */
+}
+
+/* Estilos para links dentro do elemento de navegação */
+nav a {
+    color: black; 
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 1.25em;
+    padding: 40px; /* espaçamento interno */
+}
+/* Estilos para elementos com a classe .menu e .submenu */
+
+/* Estilos para botões de item de menu quando hover */
+.item.button:hover {
+    /* Define a cor de fundo ao passar o mouse */
+    background-color: red;
+}
+
+/* Estilos para links de itens de menu que não são botões quando hover */
+.item:not(.button) a:hover {
+    /* Define a cor do texto ao passar o mouse */
+    color: darkgray;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 6px; 
+}
+
+#menu li {
+    margin: 8px; /* margem em todos os lados dos itens de menu */
+    display: flex;
+    align-items: center; /* centralizando verticalmente o conteúdo dos itens de menu */
+}
+
+#menu li a {
+    color: black;
+    padding: 10px; /* espaçamento interno nos links */
+}
+
+.item li a:hover {
+    background-color: #e05200; /* Cor de fundo quando hover */
+}
+
