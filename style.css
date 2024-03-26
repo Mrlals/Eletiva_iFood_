@@ -6,10 +6,12 @@
 
 body {
     font-family: "Raleway", Helvetica, sans-serif;
+
     font-size: 1em;
     background-image: url('images/iFood_blc.png'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho correto para sua imagem */
     background-size: cover; /* Isso faz com que a imagem cubra todo o fundo */
     background-position: center; /* Isso centraliza a imagem no fundo */
+    background-repeat: no-repeat;
     /* Outras propriedades de estilo podem ser adicionadas conforme necessário */
 }
 
@@ -65,3 +67,63 @@ nav a {
     background-color: #e05200; /* Cor de fundo quando hover */
 }
 
+.conteudo h2 {
+    font-size: 3em;
+    color: #3e3e3e;
+    font-weight: 600;
+    padding: 80px 5px 5px 5px;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo p {
+    color: #3e3e3e;
+    font-size: 1.10em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+.form .busca {
+    width: calc(100% - 200px);
+    max-width: 340px;
+    background: #f2f2f2;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.form .busca input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+}
+
+.form .busca input::placeholder {
+    font-weight: 400;
+    color: #a6a6a6;
+    padding: 10px;
+}
+
+.form button {
+    width: 100%;
+    max-width: 220px;
+    background: #ea1d2c;
+    color: #fff;
+    font-weight: 400;
+    border: 0;
+    border-radius: 8px;
+}
+.form button:hover {
+    background: #c2121f;
+}
