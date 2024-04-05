@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-    background-color: #f5f3f4; 
+    background-color: #f7f7f7; 
 }
 
 nav a {
@@ -36,22 +36,23 @@ nav a {
     justify-content: space-between;
 }
 
-#menu li {
-    padding: 1em;
-    display: block;
-}
-
 #menu li a {
     display: block;
     color: rgb(34, 34, 34);
     padding: 10px;
-
 }
 
 #menu li a:hover{
     display: block;
     color: #ea1d2c;
     padding: 10px; 
+}
+
+.item{
+    order: 1;
+    display: block;
+    padding: 10px;
+    list-style-type: none; 
 }
 
 #criar {
@@ -62,7 +63,8 @@ nav a {
     padding: 10px; 
     justify-items: flex-end;
     top: 0; 
-    right: 0; 
+    right: 0;
+    list-style-type: none; 
 }
 
 #criar .item a {
@@ -165,14 +167,15 @@ nav a {
     #menu li {
         margin: 3px 10px; 
         padding: 3px 10px;
+        list-style-type: none;
     }
 
     #criar {
-        order: initial;
+        order: 2;
     }
 
     .button {
-        order: initial;
+        order: 3;
     }
 
     #listras {
@@ -191,4 +194,21 @@ nav a {
         text-align: center;
     }
     
+    .item{
+        order: 1;
+        display: none;
+    }
+    
+    .active .item {
+        display: block;
+    }
+
+    .botao-entrar {
+        display: none;
+    }
+
+    .active .botao-entrar{
+        display: block;
+    }
+
 }
