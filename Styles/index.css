@@ -6,9 +6,8 @@
 
 body {
     font-family: "Raleway", Helvetica, sans-serif;
-
     font-size: 1em;
-    background-image: url('images/iFood_blc.png'); 
+    background-image: url("images/iFood_blc.png"); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
