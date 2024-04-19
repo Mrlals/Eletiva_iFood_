@@ -15,14 +15,14 @@ body {
 }
 
 #logo {
-    position: absolute;
-    top: 25px;
+    position:fixed;
+    top: 10px;
     left: 25px;
-    width: 5vw;
+    margin-top: 2px;
 }
 
 #imagem {
-    position: absolute;
+    position: relative;
     transform: translateY(-50%);
     top: 50%;
     left: 10vw;
@@ -34,7 +34,8 @@ body {
     width: 65vw;
     border-top-right-radius: 200%;
     border-bottom-right-radius: 200%;
-    z-index: 0;
+    position: relative;
+    left: 0;
 }
 
 #form-entrar {
@@ -141,4 +142,52 @@ h2 {
 .button div:hover {
     background-color: #ea1d2c;
     color: white;
+}
+
+@media (max-width: 960px) {
+    #corpo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        z-index: 2;
+    }
+
+    #background {
+        background-color: rgb(253, 237, 238);
+        height: 100vh;
+        width: 100vw;
+        border-top-right-radius: 200%;
+        border-bottom-right-radius: 200%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #imagem {
+        position: relative;
+        top: 20vh;
+        align-items: center;
+        width: 450px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    #form-entrar {
+        margin-top: 30vh;
+        width: 430px;
+        height: 420px;
+        min-width: 400px;
+        border-radius: 3%;
+        box-shadow: 0px 0px 5px 3px rgba(255, 0, 0, 0.05);
+        background-color: white;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
